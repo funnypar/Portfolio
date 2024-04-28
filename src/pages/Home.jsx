@@ -1,4 +1,4 @@
-const RightSide = () => {
+const Home = () => {
     return (
         <div className="bg-rightSide rounded-l-3xl flex justify-center items-center flex-col text-header gap-6">
             <h1 className=" text-5xl text-center font-roberto font-bold cursor-default">
@@ -11,4 +11,4 @@ const RightSide = () => {
     );
 };
 
-export default RightSide;
+export default Home;

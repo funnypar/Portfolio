@@ -6,6 +6,7 @@ import {
     HiOutlinePuzzlePiece,
     HiOutlineIdentification,
 } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
     const [isHovered, setIsHovered] = useState(null);
@@ -31,11 +32,11 @@ const Menu = () => {
     return (
         <ul className="bg-leftSide h-96 w-16 p-2 flex justify-around items-center flex-col rounded-full shadow-menu">
             <li>
-                <a
+                <Link
+                    to="/"
                     id="1"
                     onMouseOver={mouseHandler}
                     onMouseOut={() => setIsHovered(null)}
-                    href="#"
                     className=" w-10 h-10 text-front text-3xl transition-all text-center"
                 >
                     {isHovered === 1 ? (
@@ -43,14 +44,14 @@ const Menu = () => {
                     ) : (
                         <HiOutlineHome />
                     )}
-                </a>
+                </Link>
             </li>
             <li>
-                <a
+                <Link
+                    to="/me"
                     id="2"
                     onMouseOver={mouseHandler}
                     onMouseOut={() => setIsHovered(null)}
-                    href="#"
                     className=" w-10 h-10 text-front text-3xl transition-all text-center"
                 >
                     {isHovered === 2 ? (
@@ -58,14 +59,14 @@ const Menu = () => {
                     ) : (
                         <HiOutlineUser />
                     )}
-                </a>
+                </Link>
             </li>
             <li>
-                <a
+                <Link
+                    to="/resume"
                     id="3"
                     onMouseOver={mouseHandler}
                     onMouseOut={() => setIsHovered(null)}
-                    href="#"
                     className=" w-10 h-10 text-front text-3xl transition-all text-center"
                 >
                     {isHovered === 3 ? (
@@ -73,37 +74,37 @@ const Menu = () => {
                     ) : (
                         <HiOutlineIdentification />
                     )}
-                </a>
+                </Link>
             </li>
             <li>
-                <a
+                <Link
+                    to="/portfolio"
                     id="4"
                     onMouseOver={mouseHandler}
                     onMouseOut={() => setIsHovered(null)}
-                    href="#"
-                    className=" w-10 h-10 text-front text-3xl transition-all text-center"
+                    className=" w-10 h-10 text-front text-3xl transition-all text-center "
                 >
                     {isHovered === 4 ? (
                         <p className="text-base text-item">Portfolio</p>
                     ) : (
                         <HiOutlinePuzzlePiece />
                     )}
-                </a>
+                </Link>
             </li>
             <li>
-                <a
+                <Link
+                    to="/contact"
                     id="5"
                     onMouseOver={mouseHandler}
                     onMouseOut={() => setIsHovered(null)}
-                    href="#"
-                    className=" w-10 h-10 text-front text-3xl transition-all text-center"
+                    className=" w-10 h-10 text-front text-3xl transition-all text-center bg-black"
                 >
                     {isHovered === 5 ? (
                         <p className="text-base text-item">Contact</p>
                     ) : (
                         <HiOutlineRocketLaunch />
                     )}
-                </a>
+                </Link>
             </li>
         </ul>
     );

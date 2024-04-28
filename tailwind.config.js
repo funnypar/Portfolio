@@ -15,6 +15,7 @@ export default {
                 header: "#f5f5f5",
                 front: "#9d9d9d",
                 item: "#5fa3da",
+                me: "#5a8fd6",
             },
             borderRadius: {
                 box: "2rem",
