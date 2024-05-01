@@ -2,7 +2,9 @@
 const Button = ({ children }) => {
     return (
         <button className="py-1 px-4 border-2 rounded-full hover:bg-white transition-all hover:text-leftSide">
-            {children}
+            <a href="/public/CV/CV.pdf" download>
+                {children}
+            </a>
         </button>
     );
 };
