@@ -2,7 +2,7 @@ const Certificates = () => {
     return (
         <>
             <h4 className="text-2xl font-bold mt-12">Certificates</h4>
-            <div className="flex flex-wrap gap-12 mt-8">
+            <div className="flex flex-wrap gap-12 mt-8 phone:gap-12 phone:justify-center">
                 <div className=" w-1/3 text-center outline outline-4 rounded-lg outline-gray-600 outline-offset-4 flex flex-col gap-2">
                     <img
                         src="/public/media/cs50x.png"

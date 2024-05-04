@@ -1,6 +1,6 @@
 const Infos = () => {
     return (
-        <div className="grid grid-cols-2 gap-16 mt-10">
+        <div className="grid grid-cols-2 gap-16 mt-10 phone:gap-5 phone:grid-rows-2 phone:grid-cols-none phone:mt-6">
             <p>
                 {`I am Mohammadparsa Norouzi and my friends call me {Mopano},
         a Frontend-developer with 1 year of experience. During this

@@ -30,7 +30,7 @@ const Menu = () => {
         }
     }
     return (
-        <ul className="bg-leftSide h-96 w-16 p-2 flex justify-around items-center flex-col rounded-full shadow-menu">
+        <ul className="bg-leftSide h-96 w-16 p-2 flex justify-around items-center flex-col rounded-full shadow-menu phone:flex-row phone:w-96 phone:h-12 phone:shadow-none">
             <li>
                 <Link
                     to="/"

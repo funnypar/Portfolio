@@ -3,7 +3,7 @@ import ConnectionList from "./ConnectionList";
 
 const LeftSide = () => {
     return (
-        <div className="bg-leftSide flex justify-around items-center flex-col text-header py-2 px-6">
+        <div className="bg-leftSide flex justify-around items-center flex-col text-header py-2 px-6 phone:hidden">
             <img
                 src="media/parsa.jpg"
                 alt="user"

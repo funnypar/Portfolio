@@ -3,7 +3,7 @@ import { DiGithubAlt } from "react-icons/di";
 
 const PortfolioItem = ({ name, image, project, github, techs = [] }) => {
     return (
-        <div className=" w-2/5 outline outline-3 outline-offset-8 rounded-lg outline-item ">
+        <div className=" w-2/5 outline outline-3 outline-offset-8 rounded-lg outline-item phone:w-full">
             <a href={project}>
                 <img
                     src={image}

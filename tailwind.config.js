@@ -5,6 +5,7 @@ module.exports = withMT({
     theme: {
         extend: {
             height: {
+                phone: "30rem",
                 box: "33rem",
             },
             width: {
@@ -22,6 +23,7 @@ module.exports = withMT({
                 box: "2rem",
             },
             gridTemplateColumns: {
+                phone: "1fr .5fr ",
                 box: ".5fr 1fr",
                 contact: ".60fr 1fr",
             },
@@ -31,6 +33,9 @@ module.exports = withMT({
             boxShadow: {
                 box: "0px 0px 30px 10px rgba(256, 256, 256, 0.6)",
                 menu: "0px 0px 5px 5px rgba(256, 256, 256, 0.6)",
+            },
+            screens: {
+                phone: { max: "640px" },
             },
         },
     },
