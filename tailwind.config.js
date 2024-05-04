@@ -23,6 +23,7 @@ module.exports = withMT({
             },
             gridTemplateColumns: {
                 box: ".5fr 1fr",
+                contact: ".60fr 1fr",
             },
             fontFamily: {
                 roberto: ["Roboto", "sans-serif"],

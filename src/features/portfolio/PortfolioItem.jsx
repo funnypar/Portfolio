@@ -31,7 +31,7 @@ const PortfolioItem = ({ name, image, project, github, techs = [] }) => {
                         <div className="flex flex-wrap gap-2 font-normal mt-2">
                             {techs.map((el) => (
                                 <p
-                                    key={Math.random}
+                                    key={Math.random()}
                                     className="bg-me py-1 px-2 text-center rounded-md text-sm"
                                 >
                                     {el}
