@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
     HiOutlineHome,
     HiOutlineUser,
@@ -6,37 +6,37 @@ import {
     HiOutlinePuzzlePiece,
     HiOutlineIdentification,
 } from "react-icons/hi2";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Menu = () => {
-    const [isHovered, setIsHovered] = useState(null);
-    function mouseHandler(e) {
-        switch (e.target.parentElement.id) {
-            case "1":
+    const { pathname } = useLocation();
+    const [isHovered, setIsHovered] = useState("/");
+    useEffect(() => {
+        switch (pathname) {
+            case "/":
                 setIsHovered(1);
                 break;
-            case "2":
+            case "/me":
                 setIsHovered(2);
                 break;
-            case "3":
+            case "/resume":
                 setIsHovered(3);
                 break;
-            case "4":
+            case "/portfolio":
                 setIsHovered(4);
                 break;
-            case "5":
+            case "/contact":
                 setIsHovered(5);
                 break;
         }
-    }
+    }, [pathname]);
+
     return (
         <ul className="bg-leftSide h-96 w-16 p-2 flex justify-around items-center flex-col rounded-full shadow-menu phone:flex-row phone:w-80 phone:h-12 phone:shadow-none">
             <li>
                 <Link
                     to="/"
                     id="1"
-                    onMouseOver={mouseHandler}
-                    onMouseOut={() => setIsHovered(null)}
                     className=" w-10 h-10 text-front text-3xl transition-all text-center"
                 >
                     {isHovered === 1 ? (
@@ -50,8 +50,6 @@ const Menu = () => {
                 <Link
                     to="/me"
                     id="2"
-                    onMouseOver={mouseHandler}
-                    onMouseOut={() => setIsHovered(null)}
                     className=" w-10 h-10 text-front text-3xl transition-all text-center"
                 >
                     {isHovered === 2 ? (
@@ -65,8 +63,6 @@ const Menu = () => {
                 <Link
                     to="/resume"
                     id="3"
-                    onMouseOver={mouseHandler}
-                    onMouseOut={() => setIsHovered(null)}
                     className=" w-10 h-10 text-front text-3xl transition-all text-center"
                 >
                     {isHovered === 3 ? (
@@ -80,8 +76,6 @@ const Menu = () => {
                 <Link
                     to="/portfolio"
                     id="4"
-                    onMouseOver={mouseHandler}
-                    onMouseOut={() => setIsHovered(null)}
                     className=" w-10 h-10 text-front text-3xl transition-all text-center "
                 >
                     {isHovered === 4 ? (
@@ -95,8 +89,6 @@ const Menu = () => {
                 <Link
                     to="/contact"
                     id="5"
-                    onMouseOver={mouseHandler}
-                    onMouseOut={() => setIsHovered(null)}
                     className=" w-10 h-10 text-front text-3xl transition-all text-center bg-black"
                 >
                     {isHovered === 5 ? (
