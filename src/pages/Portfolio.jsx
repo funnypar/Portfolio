@@ -6,6 +6,13 @@ const Portfolio = () => {
             <h3 className="text-3xl font-bold">Portfolio</h3>
             <div className=" font-roberto font-light flex flex-wrap gap-12 mt-12 phone:flex-col phone:gap-14">
                 <PortfolioItem
+                    name="Portfolio"
+                    image="media/projects/10.png"
+                    project="https://mopano.net/"
+                    github="https://github.com/funnypar/Portfolio"
+                    techs={["React", "React Router", "Tailwind", "HTML"]}
+                />
+                <PortfolioItem
                     name="Pizzamopano"
                     image="media/projects/1.png"
                     project="https://pizzamopano.netlify.app/"
