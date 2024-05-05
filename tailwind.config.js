@@ -5,7 +5,7 @@ module.exports = withMT({
     theme: {
         extend: {
             height: {
-                phone: "30rem",
+                phone: "77vh",
                 box: "33rem",
             },
             width: {
