@@ -7,7 +7,7 @@ const Portfolio = () => {
             <div className=" font-roberto font-light flex flex-wrap gap-12 mt-12 phone:flex-col phone:gap-14">
                 <PortfolioItem
                     name="Pizzamopano"
-                    image="/public/media/projects/1.png"
+                    image="media/projects/1.png"
                     project="https://pizzamopano.netlify.app/"
                     github="https://github.com/funnypar/Learn-React/tree/main/pizza-mopano"
                     techs={[
@@ -20,14 +20,14 @@ const Portfolio = () => {
                 />
                 <PortfolioItem
                     name="Mopanoreactredux"
-                    image="/public/media/projects/3.png"
+                    image="media/projects/3.png"
                     project="https://mopanoreactredux.netlify.app/"
                     github="https://github.com/funnypar/Learn-React/tree/main/reduxBank"
                     techs={["React", "Redux", "Redux-thunk", "HTML", "Css"]}
                 />
                 <PortfolioItem
                     name="Footexam"
-                    image="/public/media/projects/4.png"
+                    image="media/projects/4.png"
                     project="https://footexam.netlify.app/"
                     github="https://github.com/funnypar/Learn-React/tree/main/quiz"
                     techs={[
@@ -41,42 +41,42 @@ const Portfolio = () => {
                 />
                 <PortfolioItem
                     name="Mopanofaraway"
-                    image="/public/media/projects/2.png"
+                    image="media/projects/2.png"
                     project="https://mopanofaraway.netlify.app/"
                     github="https://github.com/funnypar/Learn-React/tree/main/faraway"
                     techs={["React", "HTML", "Css"]}
                 />
                 <PortfolioItem
                     name="Mopanoexchange"
-                    image="/public/media/projects/5.png"
+                    image="media/projects/5.png"
                     project="https://mopanoexchange.netlify.app/"
                     github="https://github.com/funnypar/Learn-React/tree/main/exchange"
                     techs={["React", "HTML", "Css"]}
                 />
                 <PortfolioItem
                     name="Mopanotip"
-                    image="/public/media/projects/6.png"
+                    image="media/projects/6.png"
                     project="https://mopanotip.netlify.app/"
                     github="https://github.com/funnypar/Learn-React/tree/main/tip"
                     techs={["React", "HTML", "Css"]}
                 />
                 <PortfolioItem
                     name="Mopanoowe"
-                    image="/public/media/projects/7.png"
+                    image="media/projects/7.png"
                     project="https://mopanoowe.netlify.app/"
                     github="https://github.com/funnypar/Learn-React/tree/main/owe"
                     techs={["React", "HTML", "Css"]}
                 />
                 <PortfolioItem
                     name="Whatisfoss"
-                    image="/public/media/projects/8.png"
+                    image="media/projects/8.png"
                     project="https://whatisfoss.netlify.app/"
                     github="https://github.com/funnypar/FOSS/tree/master"
                     techs={["HTML", "Sass"]}
                 />
                 <PortfolioItem
                     name="Whatisfoss"
-                    image="/public/media/projects/9.png"
+                    image="media/projects/9.png"
                     project="https://fsocietyy.netlify.app/"
                     github="https://github.com/funnypar/fSociety"
                     techs={["HTML", "Css"]}

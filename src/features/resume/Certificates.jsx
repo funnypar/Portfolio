@@ -5,7 +5,7 @@ const Certificates = () => {
             <div className="flex flex-wrap gap-12 mt-8 phone:gap-12 phone:justify-center">
                 <div className=" w-1/3 text-center outline outline-4 rounded-lg outline-gray-600 outline-offset-4 flex flex-col gap-2">
                     <img
-                        src="/public/media/cs50x.png"
+                        src="media/cs50x.png"
                         alt="cs50x"
                         className="rounded-lg hover:scale-150 transition-all duration-700"
                     />
@@ -13,7 +13,7 @@ const Certificates = () => {
                 </div>
                 <div className=" w-1/3 text-center outline outline-4 rounded-lg outline-gray-600 outline-offset-4 flex flex-col gap-2">
                     <img
-                        src="/public/media/cs50p.png"
+                        src="media/cs50p.png"
                         alt="cs50p"
                         className="rounded-lg hover:scale-150 transition-all duration-700"
                     />
@@ -21,7 +21,7 @@ const Certificates = () => {
                 </div>
                 <div className=" w-1/3 text-center outline outline-4 rounded-lg outline-gray-600 outline-offset-4 flex flex-col gap-2">
                     <img
-                        src="/public/media/B2.png"
+                        src="media/B2.png"
                         alt="B2"
                         className="rounded-lg hover:scale-150 transition-all duration-700"
                     />
