@@ -19,13 +19,11 @@ const Contact = () => {
                         <p className="font-semibold">p.r.7.norouzi@gmail.com</p>
                     </div>
                 </div>
-                <div>
-                    <Email />
-                </div>
+                <Email />
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1619.648019328473!2d51.31520981285204!3d35.71893723420904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQzJzA4LjIiTiA1McKwMTgnNTkuNSJF!5e0!3m2!1sen!2s!4v1714836598791!5m2!1sen!2s"
-                className=" border-none rounded-lg outline-none mt-12 h-96 w-full phone:order-first"
+                className=" border-none rounded-lg outline-none mt-12 h-96 w-full phone:order-first phone:h-auto"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

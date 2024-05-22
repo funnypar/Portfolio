@@ -22,7 +22,11 @@ const Email = () => {
     };
 
     return (
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-3">
+        <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-3 phone:order-first"
+        >
             <div className="flex flex-col gap-1">
                 <label className="font-semibold">Name</label>
                 <input
