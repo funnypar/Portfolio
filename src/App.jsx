@@ -5,8 +5,11 @@ import Me from "./pages/Me";
 import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import ReactBlog from "./features/blogs/ReactBlog";
+import NodeBlog from "./features/blogs/NodeBlog";
 import { Suspense } from "react";
 import { PacmanLoader } from "react-spinners";
+import Blog from "./pages/Blog";
 
 function App() {
     return (
@@ -18,6 +21,10 @@ function App() {
                         <Route path="me" element={<Me />} />
                         <Route path="resume" element={<Resume />} />
                         <Route path="portfolio" element={<Portfolio />} />
+                        <Route path="blog" element={<Blog />}>
+                            <Route path="react-blog" element={<ReactBlog />} />
+                            <Route path="node-blog" element={<NodeBlog />} />
+                        </Route>
                         <Route path="contact" element={<Contact />} />
                     </Route>
                 </Routes>

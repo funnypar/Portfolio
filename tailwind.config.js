@@ -18,6 +18,12 @@ module.exports = withMT({
                 front: "#9d9d9d",
                 item: "#5fa3da",
                 me: "#5a8fd6",
+                code: "#272822",
+                codeOrange: "#f5921e",
+                codeRed: "#f92672",
+                codeWhite: "#f3f3ed",
+                CodeGreen: "#c5bc65",
+                CodeLightGreen: "#a2dc2d",
             },
             borderRadius: {
                 box: "2rem",
@@ -28,11 +34,15 @@ module.exports = withMT({
                 contact: ".60fr 1fr",
             },
             fontFamily: {
-                roberto: ["Roboto", "sans-serif"],
+                roboto: ["Roboto", "sans-serif"],
+                merriweather: ["Merriweather", "serif"],
+                oswald: ["Oswald", "sans-serif"],
+                code: ["Source Code Pro", "monospace"],
             },
             boxShadow: {
                 box: "0px 0px 30px 10px rgba(256, 256, 256, 0.6)",
                 menu: "0px 0px 5px 5px rgba(256, 256, 256, 0.6)",
+                blog: "0px 0px 5px 8px rgba(256, 256, 256, 0.6)",
             },
             screens: {
                 phone: { max: "640px" },

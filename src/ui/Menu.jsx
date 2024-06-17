@@ -6,6 +6,7 @@ import {
     HiOutlinePuzzlePiece,
     HiOutlineIdentification,
 } from "react-icons/hi2";
+import { MdMenuBook } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 
 const Menu = () => {
@@ -25,8 +26,11 @@ const Menu = () => {
             case "/portfolio":
                 setIsHovered(4);
                 break;
-            case "/contact":
+            case "/blog":
                 setIsHovered(5);
+                break;
+            case "/contact":
+                setIsHovered(6);
                 break;
         }
     }, [pathname]);
@@ -87,11 +91,24 @@ const Menu = () => {
             </li>
             <li>
                 <Link
-                    to="/contact"
+                    to="/blog"
                     id="5"
                     className=" w-10 h-10 text-front text-3xl transition-all text-center bg-black"
                 >
                     {isHovered === 5 ? (
+                        <p className="text-base text-item">Blog</p>
+                    ) : (
+                        <MdMenuBook />
+                    )}
+                </Link>
+            </li>
+            <li>
+                <Link
+                    to="/contact"
+                    id="5"
+                    className=" w-10 h-10 text-front text-3xl transition-all text-center bg-black"
+                >
+                    {isHovered === 6 ? (
                         <p className="text-base text-item">Contact</p>
                     ) : (
                         <HiOutlineRocketLaunch />

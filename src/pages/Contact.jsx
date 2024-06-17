@@ -2,7 +2,7 @@ import { CiLocationOn, CiPhone, CiMail } from "react-icons/ci";
 import Email from "../features/context/Email";
 const Contact = () => {
     return (
-        <div className="bg-rightSide rounded-l-3xl  text-header gap-6 px-16 py-10 font-roberto overflow-scroll phone:py-10">
+        <div className="bg-rightSide rounded-l-3xl  text-header gap-6 px-16 py-10 font-roboto overflow-scroll phone:py-10">
             <h3 className="text-3xl font-bold">Contact</h3>
             <div className="grid grid-cols-contact gap-10 mt-10 phone:grid-rows-contact phone:grid-cols-none">
                 <div className="flex flex-col gap-3">
