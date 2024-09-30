@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import {
     HiOutlineHome,
-    HiOutlineUser,
-    HiOutlineRocketLaunch,
-    HiOutlinePuzzlePiece,
     HiOutlineIdentification,
+    HiOutlinePuzzlePiece,
+    HiOutlineRocketLaunch,
+    HiOutlineUser,
 } from "react-icons/hi2";
-import { MdMenuBook } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 
 const Menu = () => {
@@ -26,11 +25,8 @@ const Menu = () => {
             case "/portfolio":
                 setIsHovered(4);
                 break;
-            case "/blog":
-                setIsHovered(5);
-                break;
             case "/contact":
-                setIsHovered(6);
+                setIsHovered(5);
                 break;
         }
     }, [pathname]);
@@ -86,19 +82,6 @@ const Menu = () => {
                         <p className="text-base text-item">Portfolio</p>
                     ) : (
                         <HiOutlinePuzzlePiece />
-                    )}
-                </Link>
-            </li>
-            <li>
-                <Link
-                    to="/blog"
-                    id="5"
-                    className=" w-10 h-10 text-front text-3xl transition-all text-center bg-black"
-                >
-                    {isHovered === 5 ? (
-                        <p className="text-base text-item">Blog</p>
-                    ) : (
-                        <MdMenuBook />
                     )}
                 </Link>
             </li>

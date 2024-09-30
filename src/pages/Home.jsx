@@ -5,7 +5,7 @@ const Home = () => {
                 Mohammadparsa Norouzi
             </h1>
             <p className="font-roboto text-2xl cursor-default text-front phone:text-xl">
-                A simple programmer
+                Frontend programmer
             </p>
         </div>
     );
